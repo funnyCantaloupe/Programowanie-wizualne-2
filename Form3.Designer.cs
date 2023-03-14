@@ -38,7 +38,7 @@ namespace Programowanie_wizualne_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(188, 298);
+            this.label1.Location = new System.Drawing.Point(334, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 20);
             this.label1.TabIndex = 0;
@@ -47,27 +47,29 @@ namespace Programowanie_wizualne_2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(188, 322);
+            this.label2.Location = new System.Drawing.Point(334, 248);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 20);
+            this.label2.Size = new System.Drawing.Size(17, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "wyświetlanie_ceny";
+            this.label2.Text = "0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(323, 294);
+            this.button1.Location = new System.Drawing.Point(702, 220);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 48);
             this.button1.TabIndex = 2;
             this.button1.Text = "ZAPISZ I WRÓĆ";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(198, 12);
+            this.listView1.Location = new System.Drawing.Point(410, 104);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(183, 249);
+            this.listView1.Size = new System.Drawing.Size(306, 79);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
@@ -83,6 +85,7 @@ namespace Programowanie_wizualne_2
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

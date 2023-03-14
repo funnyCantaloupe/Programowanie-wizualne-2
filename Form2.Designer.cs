@@ -49,50 +49,54 @@ namespace Programowanie_wizualne_2
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(39, 27);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(125, 24);
+            this.radioButton1.Size = new System.Drawing.Size(128, 24);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "0.5 TB (100 ZŁ)";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(36, 57);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(114, 24);
+            this.radioButton2.Size = new System.Drawing.Size(117, 24);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "1 TB (200 ZŁ)";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(36, 87);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(114, 24);
+            this.radioButton3.Size = new System.Drawing.Size(117, 24);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "2 TB (400 ZŁ)";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(236, 16);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(116, 24);
+            this.checkBox1.Size = new System.Drawing.Size(119, 24);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "MYSZ (40 ZŁ)";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(236, 67);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(105, 24);
+            this.checkBox2.Size = new System.Drawing.Size(108, 24);
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "USB (15 ZŁ)";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -103,20 +107,22 @@ namespace Programowanie_wizualne_2
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(236, 128);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(153, 24);
+            this.checkBox3.Size = new System.Drawing.Size(156, 24);
             this.checkBox3.TabIndex = 5;
             this.checkBox3.Text = "MIKROFON (70 ZŁ)";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(236, 181);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(145, 24);
+            this.checkBox4.Size = new System.Drawing.Size(148, 24);
             this.checkBox4.TabIndex = 6;
             this.checkBox4.Text = "KAMERA (120 ZŁ)";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // comboBox1
             // 
@@ -152,9 +158,10 @@ namespace Programowanie_wizualne_2
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(252, 261);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 20);
+            this.label2.Size = new System.Drawing.Size(17, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "wyświetlanie_ceny";
+            this.label2.Text = "0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
